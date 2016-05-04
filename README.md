@@ -1,5 +1,4 @@
-## Submission Instructions
-://i.imgur.com/7v5ASc8.png)  Lab 14: Managing State
+![CF](https://i.imgur.com/7v5ASc8.png)  Lab 14: Managing State
 =======
 [![Build Status](https://travis-ci.org/codefellows-seattle-301d4/14-managing-state.svg?branch=master)](https://travis-ci.org/codefellows-seattle-301d4/14-managing-state)
 
