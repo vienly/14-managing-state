@@ -1,4 +1,5 @@
-![CF](https://i.imgur.com/7v5ASc8.png)  14-managing-state
+## Submission Instructions
+://i.imgur.com/7v5ASc8.png)  Lab 14: Managing State
 =======
 [![Build Status](https://travis-ci.org/codefellows-seattle-301d4/14-managing-state.svg?branch=master)](https://travis-ci.org/codefellows-seattle-301d4/14-managing-state)
 
@@ -18,3 +19,5 @@ Work with a pair to *comment* on the execution path for sections labeled with "C
 ## Technical Requirements and Grading Rubric
  - Ensure your code passes ESLint.
  - Accurately comment on each COMMENT item to demonstrate your understanding of the functionality and the execution path.
+im ~/.vimrc
+- Copy your original starter code into this directory, renaming it to your-name-partner-name
