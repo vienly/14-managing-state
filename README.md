@@ -1,6 +1,6 @@
 # Pair Assignment for Class 14 - Managing Application State
 
-Let's circle back to our UI logic... Ya know, everything that sets up the page for interaction. Now we can use our new tools of routing, middleware, MVC separation, SQL, and resource rendering.
+Let's circle back to our UI logic... You know, everything that sets up the page for interaction. Now we can use our new tools of routing, middleware, MVC separation, SQL, and resource rendering.
 
 Let's use these new tools to review the refactored components of the UI: author filter, category filter, the teaser link, and a bunch of click events.
 
