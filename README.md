@@ -1,4 +1,5 @@
-# Pair Assignment for Class 14 - Managing Application State
+![CF](https://i.imgur.com/7v5ASc8.png)  14-managing-state
+=======
 [![Build Status](https://travis-ci.org/codefellows-seattle-301d4/14-managing-state.svg?branch=master)](https://travis-ci.org/codefellows-seattle-301d4/14-managing-state)
 
 Let's circle back to our UI logic... You know, everything that sets up the page for interaction. Now we can use our new tools of routing, middleware, MVC separation, SQL, and resource rendering.
