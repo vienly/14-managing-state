@@ -12,7 +12,19 @@
     return template(article);
   };
 
-  // COMMENT: What does this method do?  What is it's execution path?
+  // COMMENT DONE: What does this method do?  What is it's execution path?
+
+  // it declares an options variable and a template variable
+  // the template is the compiled Handlebars layout for each option.
+  // each option is mapped to its corresponding Handlebars template with the particular author name to get it ready to be appended into the filters. This is done with a call to Article.allAuthors()
+  // Article.allAuthors() return an array of every author name in the Article.all array, then reduce them to have no duplicated names
+  // after checking if the option value is a duplicate, we append it into the filter list
+
+  // After that, we populate the category filter by calling Article.allCategories to perform a webDB call to return a collection of row data to invoke the callback function which would append the unique categories into the filter
+
+  // callstack:
+  //   articleView.populateFilters < Handlebars.compile < Article.allAuthors < Article.all.map < .map (function (author)) < $('#author-filter').append() < Article.allCategories < webDB.execute < function(rows) < $('#category-filter').append() < map(function(row))
+
   articleView.populateFilters = function() {
     var options,
       template = Handlebars.compile($('#option-template').text());
@@ -37,7 +49,11 @@
     });
   };
 
-  // COMMENT: What does this method do?  What is it's execution path?
+  // COMMENT DONE: What does this method do?  What is it's execution path?
+  // this is function attaches an event listerner to the each filter.
+  //the eventlistner will to an option selection change
+  //when a option is selected. we change the selected option display. then we use page.js to route the browser to according render functionality.
+  // each route correspound to a different controller method based on its params.
   articleView.handleFilters = function() {
     $('#filters').one('change', 'select', function() {
       resource = this.id.replace('-filter', '');
@@ -117,7 +133,11 @@
     $('#article-json').val(JSON.stringify(article) + ',');
   };
 
-  // COMMENT: What does this method do?  What is it's execution path?
+  // COMMENT DONE : What does this method do?  What is it's execution path?
+   // this method first show all html elements that has an ID articles then hide all its siblings elements.
+   // it removes of the article elements childern of articles.
+   // then it loop throough every article that its been pass in. then append their rendered representation to browser.
+   // then it calls articleView.populateFilters to append options to both filters.
   articleView.index = function(articles) {
     $('#articles').show().siblings().hide();
 
@@ -128,6 +148,7 @@
 
     articleView.populateFilters();
     // COMMENT: What does this method do?  What is it's execution path?
+    // handleFilters is a function that attaches an event listener on a change in the select options then reroute the user to the corresponding view pointg
     articleView.handleFilters();
 
     // DONE: Replace setTeasers with just the truncation logic, if needed:
