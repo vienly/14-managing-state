@@ -13,18 +13,9 @@
   };
 
   // COMMENT DONE: What does this method do?  What is it's execution path?
-
-  // it declares an options variable and a template variable
-  // the template is the compiled Handlebars layout for each option.
-  // each option is mapped to its corresponding Handlebars template with the particular author name to get it ready to be appended into the filters. This is done with a call to Article.allAuthors()
-  // Article.allAuthors() return an array of every author name in the Article.all array, then reduce them to have no duplicated names
-  // after checking if the option value is a duplicate, we append it into the filter list
-
-  // After that, we populate the category filter by calling Article.allCategories to perform a webDB call to return a collection of row data to invoke the callback function which would append the unique categories into the filter
-
-  // callstack:
-  //   articleView.populateFilters < Handlebars.compile < Article.allAuthors < Article.all.map < .map (function (author)) < $('#author-filter').append() < Article.allCategories < webDB.execute < function(rows) < $('#category-filter').append() < map(function(row))
-
+  // it declatres options variable and template variable
+  // the template is the layout for each option. each option is then populated with the author names than append it to the author filter after checking if its duplicate option.
+  // next we use the option template to populate the category filter in the same manner.
   articleView.populateFilters = function() {
     var options,
       template = Handlebars.compile($('#option-template').text());
@@ -148,7 +139,6 @@
 
     articleView.populateFilters();
     // COMMENT: What does this method do?  What is it's execution path?
-    // handleFilters is a function that attaches an event listener on a change in the select options then reroute the user to the corresponding view point
     articleView.handleFilters();
 
     // DONE: Replace setTeasers with just the truncation logic, if needed:
