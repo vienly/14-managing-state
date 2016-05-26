@@ -12,7 +12,10 @@
     return template(article);
   };
 
-  // COMMENT: What does this method do?  What is it's execution path?
+  // COMMENT DONE: What does this method do?  What is it's execution path?
+  // it declatres options variable and template variable
+  // the template is the layout for each option. each option is then populated with the author names than append it to the author filter after checking if its duplicate option.
+  // next we use the option template to populate the category filter in the same manner.
   articleView.populateFilters = function() {
     var options,
       template = Handlebars.compile($('#option-template').text());
@@ -37,7 +40,11 @@
     });
   };
 
-  // COMMENT: What does this method do?  What is it's execution path?
+  // COMMENT DONE: What does this method do?  What is it's execution path?
+  // this is function attaches an event listerner to the each filter.
+  //the eventlistner will to an option selection change
+  //when a option is selected. we change the selected option display. then we use page.js to route the browser to according render functionality.
+  // each route correspound to a different controller method based on its params.
   articleView.handleFilters = function() {
     $('#filters').one('change', 'select', function() {
       resource = this.id.replace('-filter', '');
@@ -117,7 +124,11 @@
     $('#article-json').val(JSON.stringify(article) + ',');
   };
 
-  // COMMENT: What does this method do?  What is it's execution path?
+  // COMMENT DONE : What does this method do?  What is it's execution path?
+   // this method first show all html elements that has an ID articles then hide all its siblings elements.
+   // it removes of the article elements childern of articles.
+   // then it loop throough every article that its been pass in. then append their rendered representation to browser.
+   // then it calls articleView.populateFilters to append options to both filters.
   articleView.index = function(articles) {
     $('#articles').show().siblings().hide();
 
