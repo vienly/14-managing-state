@@ -9,6 +9,7 @@ Let's use these new tools to review the refactored components of the UI: author 
 Work with your partner to *comment* on the execution path for sections labeled with "COMMENT:".  These items are essentially TODO items that have been done for you and demonstrate the concepts presented during lecture this morning.  While you will not be building out any additional functionality for this assignment, you will need to describe what each newly refactored method does and where it points back to.  The navigator for this assignment should be tracing the execution path and determining what each new method/update is doing while the driver will need to summarize the navigator's thoughts into a 1-2 sentence comment (below each "COMMENT:" item).  Be sure to switch roles after 4-5 COMMENT items have been completed.
 
 ## Helpful Hints?
+ - Don't forget to `npm i` to download our modules!
  - Review the `Article.findWhere` method.  This lets you grab a subset of articles by some field/value combo you pass in.
  - The "Read On" link is now a standard html link.
  - The filters now populate based on what's in the DB, not what's in the DOM: "single source of truth"
