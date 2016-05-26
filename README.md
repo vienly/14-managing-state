@@ -1,12 +1,12 @@
 ![CF](https://i.imgur.com/7v5ASc8.png)  Lab 14: Managing State
 =======
-[![Build Status](https://travis-ci.org/codefellows-seattle-301d4/14-managing-state.svg?branch=master)](https://travis-ci.org/codefellows-seattle-301d4/14-managing-state)
+[![Build Status](https://travis-ci.org/codefellows-seattle-301d4/14-managing-state.svg?branch=master)](https://travis-ci.org/codefellows-seattle-301d4/14-managing-state) [![GitHub issues](https://img.shields.io/badge/Issues%3F-Ask%20for%20Help!-orange.svg)](https://github.com/codefellows/seattle-301d4/issues/new)
 
 Let's circle back to our UI logic... You know, everything that sets up the page for interaction. Now we can use our new tools of routing, middleware, MVC separation, SQL, and resource rendering.
 
 Let's use these new tools to review the refactored components of the UI: author filter, category filter, the teaser link, and a bunch of click events.
 
-Work with a pair to *comment* on the execution path for sections labeled with "COMMENT:".  These items are essentially TODO items that have been done for you and demonstrate the concepts presented during lecture this morning.  While you will not be building out any additional functionality for this assignment, you will need to describe what each newly refactored method does and where it points back to.  The navigator for this assignment should be tracing the execution path and determining what each new method/update is doing while the driver will need to summarize the navigator's thoughts into a 1-2 sentence comment (below each "COMMENT:" item).  Be sure to switch roles after 4-5 COMMENT items have been completed.
+Work with your partner to *comment* on the execution path for sections labeled with "COMMENT:".  These items are essentially TODO items that have been done for you and demonstrate the concepts presented during lecture this morning.  While you will not be building out any additional functionality for this assignment, you will need to describe what each newly refactored method does and where it points back to.  The navigator for this assignment should be tracing the execution path and determining what each new method/update is doing while the driver will need to summarize the navigator's thoughts into a 1-2 sentence comment (below each "COMMENT:" item).  Be sure to switch roles after 4-5 COMMENT items have been completed.
 
 ## Helpful Hints?
  - Review the `Article.findWhere` method.  This lets you grab a subset of articles by some field/value combo you pass in.
@@ -16,7 +16,4 @@ Work with a pair to *comment* on the execution path for sections labeled with "C
  - This regular expression will match all whitespace in a string: `/\W+/g`
 
 ## Technical Requirements and Grading Rubric
- - Ensure your code passes ESLint.
  - Accurately comment on each COMMENT item to demonstrate your understanding of the functionality and the execution path.
-im ~/.vimrc
-- Copy your original starter code into this directory, renaming it to your-name-partner-name
